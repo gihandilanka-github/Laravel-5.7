@@ -1,6 +1,6 @@
 <meta charset="utf-8">
 <title>
-    {{ !empty ($metaTitle) ? $metaTitle : 'ERV APP' }}
+    {{ !empty ($metaTitle) ? $metaTitle : env('APP_NAME', 'Laravel')}}
 </title>
 
 <meta http-equiv="X-UA-Compatible"
@@ -25,5 +25,4 @@
 
 <link href="{{ asset('bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
 <link href="{{ asset('css/admin.css')}}" rel="stylesheet">
-@include('partials.javascripts')
 
